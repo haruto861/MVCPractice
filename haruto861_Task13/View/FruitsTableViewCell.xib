@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="FruitsTableViewCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="FruitsTableViewCell" id="KGk-i7-Jjw" customClass="FruitsTableViewCell" customModule="haruto861_Task13" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jle-da-Q9K">
+                        <rect key="frame" x="85" y="11.5" width="205" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="205" id="r5k-Sd-nAD"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="arB-Qd-4HN">
+                        <rect key="frame" x="10" y="4.5" width="35" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="35" id="MpD-aK-J77"/>
+                            <constraint firstAttribute="height" constant="35" id="Sub-wP-8Mw"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="jle-da-Q9K" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Ovq-rf-b3w"/>
+                    <constraint firstItem="jle-da-Q9K" firstAttribute="leading" secondItem="arB-Qd-4HN" secondAttribute="trailing" constant="40" id="a4g-Za-h7J"/>
+                    <constraint firstItem="arB-Qd-4HN" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="t39-Er-bMk"/>
+                    <constraint firstItem="arB-Qd-4HN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="wVo-j1-GBJ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="chechmarkImageView" destination="arB-Qd-4HN" id="S2W-4K-0Ds"/>
+                <outlet property="fruitsNameLabel" destination="jle-da-Q9K" id="bnX-ux-nWh"/>
+            </connections>
+            <point key="canvasLocation" x="34.782608695652179" y="108.48214285714285"/>
+        </tableViewCell>
+    </objects>
+</document>
