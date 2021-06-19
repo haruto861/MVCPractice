@@ -8,11 +8,8 @@
 import UIKit
 
 class ViewController: UIViewController, UITableViewDelegate {
-    
-    private let fruitsName: [FruisModel] = [ FruisModel(fruitName: "みかん", checkImageUrl: "" ),
-                                             FruisModel(fruitName: "りんご", checkImageUrl: "cehck-mark"),
-                                             FruisModel(fruitName: "バナナ", checkImageUrl: ""),
-                                             FruisModel(fruitName: "パイナップル", checkImageUrl: "cehck-mark") ]
+
+    private let model = FruitListModel()
     
     @IBOutlet private weak var fruitsTableView: UITableView!
     override func viewDidLoad() {
@@ -26,15 +23,12 @@ class ViewController: UIViewController, UITableViewDelegate {
 
 extension ViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return fruitsName.count
+        model.fruits.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: FruitsTableViewCell.identiefier) as! FruitsTableViewCell
-        cell.configure(
-            fruitsName: fruitsName[indexPath.row].fruitName,
-            checkImageUrl: fruitsName[indexPath.row].checkImageUrl
-        )
+        cell.configure(fruit: model.fruits[indexPath.row])
         return cell
     }
 }
