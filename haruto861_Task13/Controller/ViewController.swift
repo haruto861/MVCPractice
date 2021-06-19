@@ -9,7 +9,7 @@ import UIKit
 
 class ViewController: UIViewController, UITableViewDelegate {
 
-    private let model = FruitListModel()
+    private let useCase = FruitListUseCase()
     
     @IBOutlet private weak var fruitsTableView: UITableView!
     override func viewDidLoad() {
@@ -23,12 +23,12 @@ class ViewController: UIViewController, UITableViewDelegate {
 
 extension ViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        model.fruits.count
+        useCase.fruits.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: FruitsTableViewCell.identiefier) as! FruitsTableViewCell
-        cell.configure(fruit: model.fruits[indexPath.row])
+        cell.configure(fruit: useCase.fruits[indexPath.row])
         return cell
     }
 }
