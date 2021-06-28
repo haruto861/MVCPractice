@@ -8,11 +8,16 @@
 import UIKit
 
 class ViewController: UIViewController, UITableViewDelegate {
-    
-    private let fruitsName: [FruisModel] = [ FruisModel(fruitName: "みかん", checkImageUrl: "" ),
-                                             FruisModel(fruitName: "りんご", checkImageUrl: "cehck-mark"),
-                                             FruisModel(fruitName: "バナナ", checkImageUrl: ""),
-                                             FruisModel(fruitName: "パイナップル", checkImageUrl: "cehck-mark") ]
+
+    private let fruitsList = FruitsList()
+
+    // データの参照元になるのはModelであるため、ここのデータはModelにまとめる
+//    private let fruitsName: [Fruit] = [
+//        Fruit(fruitName: "みかん", isCheck: false),
+//        Fruit(fruitName: "りんご", isCheck: true),
+//        Fruit(fruitName: "バナナ", isCheck: false),
+//        Fruit(fruitName: "パイナップル", isCheck: true)
+//    ]
     
     @IBOutlet private weak var fruitsTableView: UITableView!
     override func viewDidLoad() {
@@ -26,15 +31,12 @@ class ViewController: UIViewController, UITableViewDelegate {
 
 extension ViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return fruitsName.count
+        return fruitsList.useCase.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: FruitsTableViewCell.identiefier) as! FruitsTableViewCell
-        cell.configure(
-            fruitsName: fruitsName[indexPath.row].fruitName,
-            checkImageUrl: fruitsName[indexPath.row].checkImageUrl
-        )
+        cell.configure(fruit: fruitsList.useCase[indexPath.row])
         return cell
     }
 }

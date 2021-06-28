@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-struct FruisModel  {
+struct Fruit  {
     var fruitName: String
-    var checkImageUrl: String
+    var isCheck: Bool
 }

@@ -16,6 +16,7 @@ extension UITableView {
     // TはUITableViewCellプロトコルに準拠した方をとる -> 制約型
     // (cell: T.Type) -> UITableviewCellに準拠したTを型とする
     // where -> where以下の条件を満たす場合のみ有効
+    // カタパラメータには具体的な命名をしてあげる
     func register<T: UITableViewCell>(cell: T.Type) where T: RegisterableCell {
         register(UINib(nibName: T.nibName, bundle: nil), forCellReuseIdentifier: T.identiefier)
     }
@@ -38,8 +39,9 @@ class FruitsTableViewCell: UITableViewCell, RegisterableCell {
         return String(describing: self)
     }
 
-    func configure(fruitsName: String, checkImageUrl: String) {
-        fruitsNameLabel.text = fruitsName
-        chechmarkImageView.image = UIImage(named: checkImageUrl) 
+    func configure(fruit: Fruit) {
+        fruitsNameLabel.text = fruit.fruitName
+        // true→画像を返す false→nilを返す
+        chechmarkImageView.image = fruit.isCheck ? UIImage(named: "check-mark") : nil
     }
 }
