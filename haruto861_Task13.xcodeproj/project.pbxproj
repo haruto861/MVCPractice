@@ -53,6 +53,14 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		F10F2FB126FC5E0100647C82 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F1EA48F6267738370071047C /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		F1EA48E1267738360071047C = {
 			isa = PBXGroup;
 			children = (
@@ -72,13 +80,13 @@
 		F1EA48EC267738360071047C /* haruto861_Task13 */ = {
 			isa = PBXGroup;
 			children = (
+				F10F2FB126FC5E0100647C82 /* Resources */,
 				F10F2FAA26FC5AB200647C82 /* Extension */,
 				F1EA490C26774A5E0071047C /* View */,
 				F1EA490B26774A560071047C /* Model */,
 				F1EA490A26774A4B0071047C /* Controller */,
 				F1EA48ED267738360071047C /* AppDelegate.swift */,
 				F1EA48EF267738360071047C /* SceneDelegate.swift */,
-				F1EA48F6267738370071047C /* Assets.xcassets */,
 				F1EA48FB267738370071047C /* Info.plist */,
 			);
 			path = haruto861_Task13;
