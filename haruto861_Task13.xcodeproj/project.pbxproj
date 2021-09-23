@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F10F2FAC26FC5AC500647C82 /* UITabelview+Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10F2FAB26FC5AC500647C82 /* UITabelview+Register.swift */; };
+		F10F2FAE26FC5AE400647C82 /* FruitList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10F2FAD26FC5AE400647C82 /* FruitList.swift */; };
 		F1EA48EE267738360071047C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EA48ED267738360071047C /* AppDelegate.swift */; };
 		F1EA48F0267738360071047C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EA48EF267738360071047C /* SceneDelegate.swift */; };
 		F1EA48F2267738360071047C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EA48F1267738360071047C /* ViewController.swift */; };
@@ -15,10 +17,12 @@
 		F1EA48FA267738370071047C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1EA48F8267738370071047C /* LaunchScreen.storyboard */; };
 		F1EA4904267738F30071047C /* FruitsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EA4902267738F30071047C /* FruitsTableViewCell.swift */; };
 		F1EA4905267738F30071047C /* FruitsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1EA4903267738F30071047C /* FruitsTableViewCell.xib */; };
-		F1EA4908267743B60071047C /* FruitsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EA4907267743B60071047C /* FruitsModel.swift */; };
+		F1EA4908267743B60071047C /* Fruit.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EA4907267743B60071047C /* Fruit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F10F2FAB26FC5AC500647C82 /* UITabelview+Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITabelview+Register.swift"; sourceTree = "<group>"; };
+		F10F2FAD26FC5AE400647C82 /* FruitList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitList.swift; sourceTree = "<group>"; };
 		F1EA48EA267738360071047C /* haruto861_Task13.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = haruto861_Task13.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1EA48ED267738360071047C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F1EA48EF267738360071047C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -29,7 +33,7 @@
 		F1EA48FB267738370071047C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F1EA4902267738F30071047C /* FruitsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitsTableViewCell.swift; sourceTree = "<group>"; };
 		F1EA4903267738F30071047C /* FruitsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FruitsTableViewCell.xib; sourceTree = "<group>"; };
-		F1EA4907267743B60071047C /* FruitsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitsModel.swift; sourceTree = "<group>"; };
+		F1EA4907267743B60071047C /* Fruit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fruit.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +47,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F10F2FAA26FC5AB200647C82 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F10F2FAB26FC5AC500647C82 /* UITabelview+Register.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		F1EA48E1267738360071047C = {
 			isa = PBXGroup;
 			children = (
@@ -62,6 +74,7 @@
 		F1EA48EC267738360071047C /* haruto861_Task13 */ = {
 			isa = PBXGroup;
 			children = (
+				F10F2FAA26FC5AB200647C82 /* Extension */,
 				F1EA490C26774A5E0071047C /* View */,
 				F1EA490B26774A560071047C /* Model */,
 				F1EA490A26774A4B0071047C /* Controller */,
@@ -86,7 +99,8 @@
 		F1EA490B26774A560071047C /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				F1EA4907267743B60071047C /* FruitsModel.swift */,
+				F1EA4907267743B60071047C /* Fruit.swift */,
+				F10F2FAD26FC5AE400647C82 /* FruitList.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -174,7 +188,9 @@
 				F1EA4904267738F30071047C /* FruitsTableViewCell.swift in Sources */,
 				F1EA48F2267738360071047C /* ViewController.swift in Sources */,
 				F1EA48EE267738360071047C /* AppDelegate.swift in Sources */,
-				F1EA4908267743B60071047C /* FruitsModel.swift in Sources */,
+				F10F2FAE26FC5AE400647C82 /* FruitList.swift in Sources */,
+				F1EA4908267743B60071047C /* Fruit.swift in Sources */,
+				F10F2FAC26FC5AC500647C82 /* UITabelview+Register.swift in Sources */,
 				F1EA48F0267738360071047C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
