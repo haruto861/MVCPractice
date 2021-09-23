@@ -8,13 +8,8 @@
 import Foundation
 import UIKit
 
-protocol RegisterableCell {
-    static var identiefier: String { get }
-    static var nibName: String { get }
-}
-
 extension UITableView {
-    func register<T: UITableViewCell>(cell: T.Type) where T: RegisterableCell {
-        register(UINib(nibName: T.nibName, bundle: nil), forCellReuseIdentifier: T.identiefier)
+    func register<T: UITableViewCell>(cell: T.Type)  {
+        register(UINib(nibName: T.className, bundle: nil), forCellReuseIdentifier: T.className)
     }
 }

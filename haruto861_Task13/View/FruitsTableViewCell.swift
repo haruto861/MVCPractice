@@ -7,22 +7,10 @@
 
 import UIKit
 
-final class FruitsTableViewCell: UITableViewCell, RegisterableCell {
+final class FruitsTableViewCell: UITableViewCell {
 
     @IBOutlet private weak var fruitsNameLabel: UILabel!
     @IBOutlet private weak var chechmarkImageView: UIImageView!
-
-    static var identiefier: String {
-        className
-    }
-
-    static var nibName: String {
-        className
-    }
-
-    static var className : String {
-        return String(describing: self)
-    }
 
     func configure(fruit: Fruits) {
         fruitsNameLabel.text = fruit.fruitName

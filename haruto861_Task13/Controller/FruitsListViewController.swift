@@ -27,7 +27,7 @@ extension FruitsListViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: FruitsTableViewCell.identiefier) as! FruitsTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: FruitsTableViewCell.className) as! FruitsTableViewCell
         cell.configure(fruit: fruitsList.useCase[indexPath.row])
         return cell
     }

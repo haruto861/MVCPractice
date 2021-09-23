@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		F10F2FAC26FC5AC500647C82 /* UITabelview+Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10F2FAB26FC5AC500647C82 /* UITabelview+Register.swift */; };
 		F10F2FAE26FC5AE400647C82 /* FruitsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10F2FAD26FC5AE400647C82 /* FruitsList.swift */; };
+		F10F2FB326FC5ED900647C82 /* NSObject+Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10F2FB226FC5ED900647C82 /* NSObject+Name.swift */; };
 		F1EA48EE267738360071047C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EA48ED267738360071047C /* AppDelegate.swift */; };
 		F1EA48F0267738360071047C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EA48EF267738360071047C /* SceneDelegate.swift */; };
 		F1EA48F2267738360071047C /* FruitsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EA48F1267738360071047C /* FruitsListViewController.swift */; };
@@ -22,6 +23,7 @@
 /* Begin PBXFileReference section */
 		F10F2FAB26FC5AC500647C82 /* UITabelview+Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITabelview+Register.swift"; sourceTree = "<group>"; };
 		F10F2FAD26FC5AE400647C82 /* FruitsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitsList.swift; sourceTree = "<group>"; };
+		F10F2FB226FC5ED900647C82 /* NSObject+Name.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Name.swift"; sourceTree = "<group>"; };
 		F1EA48EA267738360071047C /* haruto861_Task13.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = haruto861_Task13.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1EA48ED267738360071047C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F1EA48EF267738360071047C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +51,7 @@
 			isa = PBXGroup;
 			children = (
 				F10F2FAB26FC5AC500647C82 /* UITabelview+Register.swift */,
+				F10F2FB226FC5ED900647C82 /* NSObject+Name.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -191,6 +194,7 @@
 			files = (
 				F1EA4904267738F30071047C /* FruitsTableViewCell.swift in Sources */,
 				F1EA48F2267738360071047C /* FruitsListViewController.swift in Sources */,
+				F10F2FB326FC5ED900647C82 /* NSObject+Name.swift in Sources */,
 				F1EA48EE267738360071047C /* AppDelegate.swift in Sources */,
 				F10F2FAE26FC5AE400647C82 /* FruitsList.swift in Sources */,
 				F1EA4908267743B60071047C /* Fruits.swift in Sources */,
