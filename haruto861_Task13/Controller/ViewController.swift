@@ -7,25 +7,17 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDelegate {
+final class ViewController: UIViewController, UITableViewDelegate {
 
-    private let fruitsList = FruitsList()
-
-    // データの参照元になるのはModelであるため、ここのデータはModelにまとめる
-//    private let fruitsName: [Fruit] = [
-//        Fruit(fruitName: "みかん", isCheck: false),
-//        Fruit(fruitName: "りんご", isCheck: true),
-//        Fruit(fruitName: "バナナ", isCheck: false),
-//        Fruit(fruitName: "パイナップル", isCheck: true)
-//    ]
+    private let fruitsList = FruitList()
     
-    @IBOutlet private weak var fruitsTableView: UITableView!
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        fruitsTableView.delegate = self
-        fruitsTableView.dataSource = self
-        fruitsTableView.register(cell: FruitsTableViewCell.self)
-        fruitsTableView.tableFooterView = UIView()
+    @IBOutlet private weak var fruitsTableView: UITableView! {
+        didSet {
+            fruitsTableView.delegate = self
+            fruitsTableView.dataSource = self
+            fruitsTableView.register(cell: FruitsTableViewCell.self)
+            fruitsTableView.tableFooterView = UIView()
+        }
     }
 }
 
