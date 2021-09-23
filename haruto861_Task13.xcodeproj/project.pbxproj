@@ -8,32 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		F10F2FAC26FC5AC500647C82 /* UITabelview+Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10F2FAB26FC5AC500647C82 /* UITabelview+Register.swift */; };
-		F10F2FAE26FC5AE400647C82 /* FruitList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10F2FAD26FC5AE400647C82 /* FruitList.swift */; };
+		F10F2FAE26FC5AE400647C82 /* FruitsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10F2FAD26FC5AE400647C82 /* FruitsList.swift */; };
 		F1EA48EE267738360071047C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EA48ED267738360071047C /* AppDelegate.swift */; };
 		F1EA48F0267738360071047C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EA48EF267738360071047C /* SceneDelegate.swift */; };
-		F1EA48F2267738360071047C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EA48F1267738360071047C /* ViewController.swift */; };
-		F1EA48F5267738360071047C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1EA48F3267738360071047C /* Main.storyboard */; };
+		F1EA48F2267738360071047C /* FruitsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EA48F1267738360071047C /* FruitsListViewController.swift */; };
+		F1EA48F5267738360071047C /* FruitsList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1EA48F3267738360071047C /* FruitsList.storyboard */; };
 		F1EA48F7267738370071047C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1EA48F6267738370071047C /* Assets.xcassets */; };
-		F1EA48FA267738370071047C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1EA48F8267738370071047C /* LaunchScreen.storyboard */; };
 		F1EA4904267738F30071047C /* FruitsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EA4902267738F30071047C /* FruitsTableViewCell.swift */; };
 		F1EA4905267738F30071047C /* FruitsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1EA4903267738F30071047C /* FruitsTableViewCell.xib */; };
-		F1EA4908267743B60071047C /* Fruit.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EA4907267743B60071047C /* Fruit.swift */; };
+		F1EA4908267743B60071047C /* Fruits.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EA4907267743B60071047C /* Fruits.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F10F2FAB26FC5AC500647C82 /* UITabelview+Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITabelview+Register.swift"; sourceTree = "<group>"; };
-		F10F2FAD26FC5AE400647C82 /* FruitList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitList.swift; sourceTree = "<group>"; };
+		F10F2FAD26FC5AE400647C82 /* FruitsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitsList.swift; sourceTree = "<group>"; };
 		F1EA48EA267738360071047C /* haruto861_Task13.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = haruto861_Task13.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1EA48ED267738360071047C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F1EA48EF267738360071047C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F1EA48F1267738360071047C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F1EA48F4267738360071047C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F1EA48F1267738360071047C /* FruitsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitsListViewController.swift; sourceTree = "<group>"; };
+		F1EA48F4267738360071047C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/FruitsList.storyboard; sourceTree = "<group>"; };
 		F1EA48F6267738370071047C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F1EA48F9267738370071047C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F1EA48FB267738370071047C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F1EA4902267738F30071047C /* FruitsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitsTableViewCell.swift; sourceTree = "<group>"; };
 		F1EA4903267738F30071047C /* FruitsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FruitsTableViewCell.xib; sourceTree = "<group>"; };
-		F1EA4907267743B60071047C /* Fruit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fruit.swift; sourceTree = "<group>"; };
+		F1EA4907267743B60071047C /* Fruits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fruits.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,9 +78,7 @@
 				F1EA490A26774A4B0071047C /* Controller */,
 				F1EA48ED267738360071047C /* AppDelegate.swift */,
 				F1EA48EF267738360071047C /* SceneDelegate.swift */,
-				F1EA48F3267738360071047C /* Main.storyboard */,
 				F1EA48F6267738370071047C /* Assets.xcassets */,
-				F1EA48F8267738370071047C /* LaunchScreen.storyboard */,
 				F1EA48FB267738370071047C /* Info.plist */,
 			);
 			path = haruto861_Task13;
@@ -91,7 +87,7 @@
 		F1EA490A26774A4B0071047C /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				F1EA48F1267738360071047C /* ViewController.swift */,
+				F1EA48F1267738360071047C /* FruitsListViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -99,8 +95,8 @@
 		F1EA490B26774A560071047C /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				F1EA4907267743B60071047C /* Fruit.swift */,
-				F10F2FAD26FC5AE400647C82 /* FruitList.swift */,
+				F1EA4907267743B60071047C /* Fruits.swift */,
+				F10F2FAD26FC5AE400647C82 /* FruitsList.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -110,6 +106,7 @@
 			children = (
 				F1EA4902267738F30071047C /* FruitsTableViewCell.swift */,
 				F1EA4903267738F30071047C /* FruitsTableViewCell.xib */,
+				F1EA48F3267738360071047C /* FruitsList.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -172,9 +169,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1EA4905267738F30071047C /* FruitsTableViewCell.xib in Resources */,
-				F1EA48FA267738370071047C /* LaunchScreen.storyboard in Resources */,
 				F1EA48F7267738370071047C /* Assets.xcassets in Resources */,
-				F1EA48F5267738360071047C /* Main.storyboard in Resources */,
+				F1EA48F5267738360071047C /* FruitsList.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -186,10 +182,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1EA4904267738F30071047C /* FruitsTableViewCell.swift in Sources */,
-				F1EA48F2267738360071047C /* ViewController.swift in Sources */,
+				F1EA48F2267738360071047C /* FruitsListViewController.swift in Sources */,
 				F1EA48EE267738360071047C /* AppDelegate.swift in Sources */,
-				F10F2FAE26FC5AE400647C82 /* FruitList.swift in Sources */,
-				F1EA4908267743B60071047C /* Fruit.swift in Sources */,
+				F10F2FAE26FC5AE400647C82 /* FruitsList.swift in Sources */,
+				F1EA4908267743B60071047C /* Fruits.swift in Sources */,
 				F10F2FAC26FC5AC500647C82 /* UITabelview+Register.swift in Sources */,
 				F1EA48F0267738360071047C /* SceneDelegate.swift in Sources */,
 			);
@@ -198,20 +194,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		F1EA48F3267738360071047C /* Main.storyboard */ = {
+		F1EA48F3267738360071047C /* FruitsList.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				F1EA48F4267738360071047C /* Base */,
 			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		F1EA48F8267738370071047C /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F1EA48F9267738370071047C /* Base */,
-			);
-			name = LaunchScreen.storyboard;
+			name = FruitsList.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

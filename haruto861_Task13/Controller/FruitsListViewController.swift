@@ -7,9 +7,9 @@
 
 import UIKit
 
-final class ViewController: UIViewController, UITableViewDelegate {
+final class FruitsListViewController: UIViewController, UITableViewDelegate {
 
-    private let fruitsList = FruitList()
+    private let fruitsList = FruitsList()
     
     @IBOutlet private weak var fruitsTableView: UITableView! {
         didSet {
@@ -21,7 +21,7 @@ final class ViewController: UIViewController, UITableViewDelegate {
     }
 }
 
-extension ViewController: UITableViewDataSource {
+extension FruitsListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return fruitsList.useCase.count
     }

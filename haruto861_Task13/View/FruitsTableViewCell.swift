@@ -24,7 +24,7 @@ final class FruitsTableViewCell: UITableViewCell, RegisterableCell {
         return String(describing: self)
     }
 
-    func configure(fruit: Fruit) {
+    func configure(fruit: Fruits) {
         fruitsNameLabel.text = fruit.fruitName
         chechmarkImageView.image = fruit.isCheck ? UIImage(named: "check-mark") : nil
     }

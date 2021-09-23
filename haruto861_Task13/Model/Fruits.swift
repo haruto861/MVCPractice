@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-struct Fruit  {
+struct Fruits  {
     var fruitName: String
     var isCheck: Bool
 }
